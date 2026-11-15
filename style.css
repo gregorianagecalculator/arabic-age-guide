@@ -1,0 +1,133 @@
+:root {
+  --page: #f6f7f3;
+  --surface: #ffffff;
+  --ink: #1e2b26;
+  --muted: #5c6b64;
+  --accent: #17685b;
+  --accent-dark: #0e4a40;
+  --line: #dce5de;
+  --max-width: 800px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Noto Kufi Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: right;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.site-name {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+main {
+  padding: 2.2rem 0 2.8rem;
+}
+
+article {
+  padding: clamp(1.2rem, 4vw, 2.5rem);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 8px 28px rgba(22, 52, 42, 0.06);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: clamp(1.65rem, 4.5vw, 2.25rem);
+  line-height: 1.55;
+}
+
+h2 {
+  margin: 2rem 0 0.7rem;
+  color: #163f36;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  line-height: 1.6;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.intro {
+  color: #34483f;
+  font-size: 1.04rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+ul {
+  margin: 0.6rem 0 1.2rem;
+  padding-right: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+.faq-list {
+  padding-right: 1.25rem;
+}
+
+.faq-list strong {
+  color: #163f36;
+}
+
+.site-footer {
+  padding: 1.2rem 0 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  article {
+    border-radius: 14px;
+  }
+}
