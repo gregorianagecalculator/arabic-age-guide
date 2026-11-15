@@ -5,7 +5,7 @@ A small Arabic RTL static site about age calculation in the Gregorian and Hijri 
 Live site:
 
 ```text
-https://arabic-age-render.lujain.workers.dev
+https://arabic-age-guide.lujain.workers.dev
 ```
 
 ## Files
@@ -60,14 +60,14 @@ Wrangler reads `wrangler.jsonc`, uploads the static files, and prints the public
 npx wrangler deploy
 ```
 
-The Worker name is `arabic-age-render`. The configuration uses the repository root as the asset directory, while `.assetsignore` excludes `.git`, `.wrangler`, `README.md`, and other non-public files.
+The Worker name is `arabic-age-guide`. The configuration uses the repository root as the asset directory, while `.assetsignore` excludes `.git`, `.wrangler`, `README.md`, and other non-public files.
 
 ## Push updates to GitHub
 
 The project is already a Git repository with the `main` branch connected to:
 
 ```text
-https://github.com/gregorianagecalculator/arabic-age-render
+https://github.com/gregorianagecalculator/arabic-age-guide
 ```
 
 For future updates:
@@ -77,15 +77,3 @@ git add .
 git commit -m "Update site content"
 git push
 ```
-
-## Optional: Render deployment
-
-Render requires a payment method on the account even for free static sites. If a card is added, the CLI flow is:
-
-```bash
-render login
-render skills install --tool opencode --skill render-deploy
-render services create --name arabic-age-render --type static_site --repo https://github.com/gregorianagecalculator/arabic-age-render --publish-directory . --branch main --confirm
-```
-
-Static sites do not accept the `--plan free` flag. They are free by default.

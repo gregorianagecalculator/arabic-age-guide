@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "arabic-age-render",
+  "name": "arabic-age-guide",
   "compatibility_date": "2026-11-13",
   "observability": {
     "enabled": true
