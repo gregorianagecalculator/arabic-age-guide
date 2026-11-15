@@ -75,16 +75,22 @@ Complete the browser login flow. If you already have an authenticated Render CLI
 
 ### 4. Create the static site
 
-Use the HTTPS URL of the GitHub repository you created:
+Render may require a payment method on the account even when the service is free. If the CLI returns a 402 payment error, add a card at:
+
+```text
+https://dashboard.render.com/billing
+```
+
+Then use the HTTPS URL of the GitHub repository you created:
 
 ```bash
-render services create --name arabic-age-render --type static_site --repo https://github.com/YOUR_USERNAME/arabic-age-render.git --publish-directory . --plan free
+render services create --name arabic-age-render --type static_site --repo https://github.com/YOUR_USERNAME/arabic-age-render.git --publish-directory . --branch main --confirm
 ```
 
 Settings used by this command:
 
 - Service type: Static Site
-- Plan: Free
+- Plan: Free by default. Static sites do not accept the `--plan free` flag.
 - Branch: `main`
 - Publish directory: `.`
 - Build command: leave empty
