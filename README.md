@@ -5,7 +5,7 @@ A small Arabic RTL static site about age calculation in the Gregorian and Hijri 
 Live site:
 
 ```text
-https://arabic-age-render.guestblogger3699.workers.dev
+https://arabic-age-render.lujain.workers.dev
 ```
 
 ## Files
