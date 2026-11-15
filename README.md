@@ -8,10 +8,23 @@ Live site:
 https://arabic-age-guide.lujain.workers.dev
 ```
 
+## Search Console
+
+The Google Search Console verification meta tag is in the `<head>` of `index.html`.
+
+Sitemap:
+
+```text
+https://arabic-age-guide.lujain.workers.dev/sitemap.xml
+```
+
 ## Files
 
 - `index.html`: the homepage article and FAQ.
-- `style.css`: typography and layout.
+- `style.css`: typography, layout, dark mode, and responsive design.
+- `favicon.svg`: site icon.
+- `sitemap.xml`: search engine sitemap.
+- `robots.txt`: crawler rules and sitemap reference.
 - `wrangler.jsonc`: Cloudflare Workers static asset configuration.
 - `.assetsignore`: keeps repository and deployment files out of the public asset bundle.
 - `README.md`: this deployment guide.

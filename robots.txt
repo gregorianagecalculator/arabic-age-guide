@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arabic-age-guide.lujain.workers.dev/sitemap.xml
